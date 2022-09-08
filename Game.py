@@ -106,7 +106,8 @@ class Food():
 	def reset(self):
 		self.position = None
 		while self.position is None:
-			self.position = [randint(self.box[0][1]+1, self.box[1][1]-1), randint(self.box[0][0]+1, self.box[1][0]-1)]
+			self.position = [randint(self.box[0][1]+1, self.box[1][1]-1), 
+                                        randint(self.box[0][0]+1, self.box[1][0]-1)]
 			if self.position in self.snake.body_list:
 				self.position = None		
 
